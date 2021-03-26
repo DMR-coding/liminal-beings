@@ -18,11 +18,11 @@
 body, tw-story {
 	font-family: 'IBM Plex Mono', monospace;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">function loadScript(src, head) {
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">function loadScript(src, prepend) {
 	var l = document.createElement("script");
 	l.src = src;
-	if(head) {
-		document.head.append(l);
+	if(prepend) {
+		document.body.prepend(l);
 	} else {
 		document.body.append(l);
 	}
