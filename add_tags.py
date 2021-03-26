@@ -17,8 +17,8 @@ doc = None
 with open("./index.html", "r") as fp:
     soup = BeautifulSoup(fp, features="html.parser")
 
-    soup.head.append(BeautifulSoup(BEGINNING), features="html.parser")
-    soup.body.append(BeautifulSoup(END), features="html.parser")
+    soup.head.append(BeautifulSoup(BEGINNING, features="html.parser"))
+    soup.body.append(BeautifulSoup(END, features="html.parser"))
 
     doc = str(soup)
 
